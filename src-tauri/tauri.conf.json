@@ -1,0 +1,50 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:8081",
+    "distDir": "../dist",
+    "withGlobalTauri": false
+  },
+  "package": {
+    "productName": "SnippetAI",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": false,
+      "shell": {
+        "all": false,
+        "open": true
+      }
+    },
+    "bundle": {
+      "active": false,
+      "targets": [],
+      "identifier": "com.snippetai.app",
+      "icon": [
+        "icons/icon.ico"
+      ]
+    },
+    "security": {
+      "csp": null
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "resizable": true,
+        "title": "SnippetAI",
+        "width": 1000,
+        "height": 700,
+        "minWidth": 400,
+        "minHeight": 500,
+        "center": true,
+        "decorations": true,
+        "transparent": false,
+        "closable": true,
+        "maximizable": true,
+        "minimizable": true
+      }
+    ]
+  }
+}
